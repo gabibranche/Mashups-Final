@@ -41,7 +41,7 @@ Design Draft 2 (Homepage)
 ![](designDraft2_dataset.jpg)
 Design Draft 2 (Page storing musical files)
 
-![](wireframeDraft1_index.jpg)
+![](wwireframeDraft1_index.jpg)
 Wireframe of Homepage
 
 ## Next Steps
