@@ -11,8 +11,16 @@ The website will have a home page with the question - What is music? and and inp
 ![](designDraft2_index.jpg)
 ![](wireframeDraft2_index.jpg)
 
+
+### The rhythm
+
+The rhythm will also correspond to musical keys by using MOD to map the alphabet to the musical scale and would therefore generate a repeated tune. 
+
+<br>
 <br>
 The index would then lead you to a new page with a world map (propably generated using D3 and a geojson file) and the word typed would appear in the center. As diffirent countries are highlighted, the word would be translated into the language spoken in the highlighted region.
+
+<br>
 
 ![](designDraft2_map.jpg)
 ![](wireframeDraft2_map.jpg)
@@ -31,7 +39,7 @@ These can be accessed via the menu button
 ## Steps to making this happen
 
 * *Wednesday 20th*
-  - Hatim: Rhythm Type
+  - Hatim: Rhythm Music Type
   - Gabi: Using Yandex API
     
 * *Friday 22nd*
