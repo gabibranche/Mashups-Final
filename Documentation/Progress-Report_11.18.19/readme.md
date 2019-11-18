@@ -9,7 +9,7 @@ The new website will still use the languange translation API and rhythm generati
 The website will have a home page with the question - What is music? and and input box. The user will get to input one word and depending on hthe speed at which the person types that word, a rhythm would be generated. 
 
 ![](designDraft2_index.jpg)
-![](wireframeDraft2.index.jpg)
+![](wireframeDraft2_index.jpg)
 
 <br>
 The index would then lead you to a new page with a world map (propably generated using D3 and a geojson file) and the word typed would appear in the center. As diffirent countries are highlighted, the word would be translated into the language spoken in the highlighted region.
