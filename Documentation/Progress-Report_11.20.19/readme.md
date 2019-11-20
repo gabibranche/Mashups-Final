@@ -49,8 +49,6 @@ I think once we figure out how to update without refreshing this will be easier 
 
   - Hatim:
      - Make Website Skeleton
-     -
-     -
   - Gabi
     - Fix the timing problem
     - Make APIs with words inputted
