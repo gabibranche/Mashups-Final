@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- include libraries needed (Jquery) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+		<!-- script needed to access API -->
+		<script>
+
+			var languages=['fr', 'de', 'ru', 'zh', 'es'];
+
+			var wordText;
+			
+
+			
+
+
+			//getMov displays a movie title, image and blurb of an element of the array using a random index
+			function getMov() {
+
+				var wordText = document.getElementById("wordSubmit").value;
+				var url = "https://translate.yandex.net/api/v1.5/tr.json/translate"+
+					 "?key=trnsl.1.1.20191106T102433Z.735128d1d604053b.d023b232825c4c9e988730609f5d238455087492" +
+					 "&text=" + wordText +
+					 "&lang=en-" + languages[2] +
+					 "&[format=plain]" +
+					 "&[options=lang]" +
+					 "&[callback=getMov]"; 
+
+				$.ajax({
+					url: url,
+					method: 'GET',
+				}).done(function(result) {
+
+		
+					console.log(result); 
+					console.log(wordText);
+
+					document.getElementById("headline").innerHTML = result.text[0];
+
+					
+
+					//fail safe function in the event that the get function does not work	
+				}).fail(function(err) {
+					throw err;
+				});
+
+				}
+
+
+			
+
+
+
+		</script>
+
+	</head>
+
+	<body bgcolor="#AE63D4">
+
+		<!-- title -->
+		<div>
+			<h1><center><em> What is music? </em></center></h1>
+		</div>
+
+		<div align="center">
+			<input type="text" name="fname" id="wordSubmit"><br>
+		</div>
+
+
+		<!-- button to get info from API -->
+		<div align="center">
+			<button onclick="getMov()" id="movBtn">Enter one word</button>
+		</div>
+
+		<!-- information from API -->
+		<div style="height:400">
+
+			<h1 id="headline" align="center"></h1>
+
+			<div align="center">
+				<img id="movImg" height="40%" width="40%"></img>
+			</div>
+
+			<br>
+			<br>
+
+			<div id="blurb" align="center" style="font-size:24px"></div>
+		</div>
+
+
+	</body>
+
+</html>
