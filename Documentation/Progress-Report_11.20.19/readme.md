@@ -23,6 +23,13 @@ In order to time the display the translations properly, I needed to store them i
 
 ### Hatim
 
+#### Using p5.sound
+
+Using p5.sound, I created a sound envelope that was called everytime a key was pressed on the screen. 
+
+#### Typing a word
+
+I also made a div that changed the word displaying depending on what the user inputted. I made it so that only letter characters would produce sounds and be added to the word (so barring special keys like F5 or Alt). This would be the answer to the question "What is Music?" 
 
 ## Challenges
 
@@ -42,6 +49,9 @@ I think once we figure out how to update without refreshing this will be easier 
 
 ### Hatim
 
+#### Getting sound out
+
+My first challenge was getting sound out of the navigator. The way chrome handled sound changed since the references for p5 were written, such that now the website is only allowed to produce sound once the user had interacted at least once with it. In order to deal with this, I added a touchStarted function to my code which only so that sound only starts playing after the user has clicked on the page. In the future, I'll add a message that says "Please click somewhere to load the website" at first.
 
 ## Next Steps
 
@@ -49,6 +59,9 @@ I think once we figure out how to update without refreshing this will be easier 
 
   - Hatim:
      - Make Website Skeleton
+     - Add tempo
+     - Add the letters typed to the rhythm
+     
   - Gabi
     - Fix the timing problem
     - Make APIs with words inputted
