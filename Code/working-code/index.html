@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- include libraries needed (Jquery) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src = "d3/d3.js"></script>
+		<script type="text/javascript" src="scripts/mergeScript.js"></script>
+	</head>
+
+
+<body bgcolor="#AE63D4">
+
+		<!-- title -->
+		<div id="prompt">
+			<div>
+				<h1><center><em> What is music? </em></center></h1>
+			</div>
+
+			<div align="center">
+				<input type="text" name="fname" id="wordSubmit"><br>
+			</div>
+
+
+			<!-- button to get info from API -->
+			<div align="center">
+				<button onclick="wordSubmitted()" id="movBtn">Enter one word</button>
+			</div>
+
+		</div>
+		<!-- information from API -->
+		<div style="height:400">
+
+			<h1 id="headline" align="center"></h1>
+
+			<div align="center">
+				<img id="movImg" height="40%" width="40%"></img>
+			</div>
+
+			<br>
+			<br>
+
+			<div id="blurb" align="center" style="font-size:24px"></div>
+		</div>
+
+
+	</body>
+
+</html>
