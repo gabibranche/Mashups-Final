@@ -13,6 +13,19 @@
  
  #### Fixing the timing problem:
  
- The sleep function which I was using to make sure the translations came out at specific times was not working and all the words were displaying very rapidly. After discussing with Jack, I learned that the challenge was because Javascript is *asynchronous*. This implied that even though my code was written chronological 
+ The sleep function which I was using to make sure the translations came out at specific times was not working and all the words were displaying very rapidly. After discussing with Jack, I learned that the challenge was because Javascript is *asynchronous*. This implied that even though my code was written chronologicalLY, all the commands begin basically at the same time which made the translations run so quickly. To fix this problem I needed to do to things:
+ <br>
+ Firstly I nneded to program the translations to only run after all the calls to the API were made. This way none would be undefined due to a delay in calls.
+ <br>
+ Secondly, since the setTimeout function does not allow for a variable to be returned I had to make a self calling function which allowed the function to be looped within eachother.
+<br>
+By doing these things, my problem was fixed. I also used this method for displaying the different elements of the map so that they could also have a controlled delay.
+
+#### Making APIs with the words inputted
+
+This was a very fun part of the project as I think it really helped put the whole project into perspective. The first thing I had to learn was to use express.js for maling a basic rest API.
+
+Up unitl starting the process I really didn't understand how calls worked. However by the end of it, I think I could fairly consistently 
+
  
  
