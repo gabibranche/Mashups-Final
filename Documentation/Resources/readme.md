@@ -2,9 +2,9 @@
 
 * [tone js](https://tonejs.github.io/): A Library used to generate sound on websites
 
-* [tone js instruments](https://tonejs.github.io/docs/13.8.25/Instrument)
+* [tone js](https://tonejs.github.io/docs/13.8.25/Instrument): instruments
 
-* [tone js examples](https://tonejs.github.io/examples/polySynth.html)
+* [tone js](https://tonejs.github.io/examples/polySynth.html): examples
 
 * [p5 js](https://p5js.org/examples/sound-load-and-play-sound.html): p5 js audio examples
 
