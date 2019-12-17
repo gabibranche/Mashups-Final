@@ -46,6 +46,9 @@ We also disabled flow so that the user could not scroll but focus just where we 
 
 ## User Testing
 
+[Example of User Testing](https://studio.youtube.com/video/xUD5lkUorI4/edit)
+
+
 We tested the website with roughly 6 people. There were different challenges with all of them. The first major challenge was that the user would not use the slider and therefore would not realised they could manipulated the tempo. Given that the default beat length was 80 units, the map would not generate fast enough before the user lost interest. 
 
 <br>
