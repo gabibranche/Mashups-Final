@@ -39,7 +39,27 @@ Up unitl starting the process I really didn't understand how calls worked. Howev
 *The Process*
 
 * Firstly I had to create a local host with node.js and make it refresh automatically.
-* 
+* Then I had to create routes so that my API could communicate with other pages
+* I then had to make my mainscript communicate with my API js such that I could get the words inputted and store them in a local json file
+* After this I could use the JSON File like an API and call the data stored locally via my local host 
+* After this I manipulated the data to make a word cloud with the words that the user inputted
+
+#### Inputting the array of all the languages
+
+This was mundane and tedious work of just inputting the language codes into my array. I am sure there was probably an more efficient way to do this like calling a language code API but it was my time effective to just input them manually.
+
+## Next Steps
+
+### Gabi
+
+* Make word cloud work
+
+### Hatim
+* Debug Sound
+
+### Both 
+* Combine all code
+* Debug all code
 
 
  
